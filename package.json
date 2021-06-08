@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "watch": "nodemon server.js",
+    "devstart": "node -r dotenv/config server.js",
+    "watch": "nodemon -r dotenv/config server.js",
+
     "seed": "node seeders/seed.js"
   },
   "author": "",
